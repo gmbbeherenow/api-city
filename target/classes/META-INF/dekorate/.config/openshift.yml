@@ -1,0 +1,58 @@
+---
+project:
+  root: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/"
+  dekorateInputDir: null
+  dekorateOutputDir: "META-INF/dekorate"
+  buildInfo:
+    name: "api-city"
+    version: "1.0.0"
+    packaging: "jar"
+    outputFile: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/api-city-1.0.0.jar"
+    classOutputDir: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/classes/"
+    resourceDir: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/classes/"
+  scmInfo: null
+group: "gustavo.bueno"
+name: "api-city"
+version: "1.0.0"
+envVars:
+- name: "api-city"
+  value: ""
+  secret: ""
+  configmap: "api-city"
+  field: ""
+- name: "JAVA_OPTS"
+  value: "-Xms=128M -Xmx=256M -XX:+HeapDumpOnOutOfMemoryError"
+  secret: ""
+  configmap: ""
+  field: ""
+workingDir: ""
+replicas: 2
+serviceAccount: ""
+host: ""
+ports:
+- name: "http"
+  containerPort: 8081
+  hostPort: 0
+  path: "/"
+  protocol: "TCP"
+serviceType: "ClusterIP"
+imagePullPolicy: "IfNotPresent"
+livenessProbe:
+  httpActionPath: ""
+  execAction: ""
+  tcpSocketAction: ""
+  initialDelaySeconds: 0
+  periodSeconds: 30
+  timeoutSeconds: 10
+readinessProbe:
+  httpActionPath: ""
+  execAction: ""
+  tcpSocketAction: ""
+  initialDelaySeconds: 0
+  periodSeconds: 30
+  timeoutSeconds: 10
+expose: true
+autoDeployEnabled: false
+buildResourceGenerationEnabled: true
+builderImage: "fabric8/s2i-java:2.3"
+autoBuildEnabled: false

@@ -1,0 +1,10 @@
+META-INF\dekorate\.project.yml
+META-INF\dekorate\openshift.json
+br\com\service\rest\CityRest.class
+br\com\service\persistence\CityRepository.class
+br\com\service\ExecuteApp.class
+META-INF\dekorate\.config\jvm.yml
+META-INF\dekorate\.config\openshift.yml
+META-INF\dekorate\.config\springapplication.yml
+META-INF\dekorate\openshift.yml
+br\com\service\entity\City.class

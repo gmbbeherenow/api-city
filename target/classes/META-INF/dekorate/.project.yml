@@ -1,0 +1,12 @@
+---
+root: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/"
+dekorateInputDir: null
+dekorateOutputDir: "META-INF/dekorate"
+buildInfo:
+  name: "api-city"
+  version: "1.0.0"
+  packaging: "jar"
+  outputFile: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/api-city-1.0.0.jar"
+  classOutputDir: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/classes/"
+  resourceDir: "file:///C:/Users/gustavo.bueno/workspace-demo/api-city/target/classes/"
+scmInfo: null

@@ -1,0 +1,11 @@
+---
+project: null
+xms: 128
+xmx: 256
+server: false
+useStringDeduplication: false
+preferIPv4Stack: false
+heapDumpOnOutOfMemoryError: true
+useGCOverheadLimit: false
+gc: "Undefined"
+secureRandom: "Undefined"
