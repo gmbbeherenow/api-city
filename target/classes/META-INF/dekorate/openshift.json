@@ -15,8 +15,8 @@
     "spec" : {
       "ports" : [ {
         "name" : "http",
-        "port" : 8081,
-        "targetPort" : 8081
+        "port" : 8080,
+        "targetPort" : 8080
       } ],
       "selector" : {
         "app" : "api-city",
@@ -133,7 +133,7 @@
             "livenessProbe" : {
               "httpGet" : {
                 "path" : "/actuator/health",
-                "port" : 8081,
+                "port" : 8080,
                 "scheme" : "HTTP"
               },
               "initialDelaySeconds" : 0,
@@ -142,14 +142,14 @@
             },
             "name" : "api-city",
             "ports" : [ {
-              "containerPort" : 8081,
+              "containerPort" : 8080,
               "name" : "http",
               "protocol" : "TCP"
             } ],
             "readinessProbe" : {
               "httpGet" : {
                 "path" : "/actuator/health",
-                "port" : 8081,
+                "port" : 8080,
                 "scheme" : "HTTP"
               },
               "initialDelaySeconds" : 0,
@@ -186,7 +186,7 @@
       "host" : "",
       "path" : "/",
       "port" : {
-        "targetPort" : 8081
+        "targetPort" : 8080
       },
       "to" : {
         "kind" : "Service",
